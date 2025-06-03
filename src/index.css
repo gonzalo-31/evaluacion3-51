@@ -1,0 +1,6 @@
+body, html, #root {
+  font-family: 'Montserrat', Arial, sans-serif;
+  letter-spacing: 0.02em;
+  color: #374151;
+  background: none; /* Deja el fondo a cargo de cada página */
+}

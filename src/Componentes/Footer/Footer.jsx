@@ -1,23 +1,26 @@
 import React from "react";
-import { Box, Typography, Link } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 const Footer = () => (
   <Box
     component="footer"
     sx={{
-      py: 2,
-      px: 2,
+      py: { xs: 2, sm: 3 },
+      px: { xs: 1, sm: 4 },
       mt: "auto",
-      backgroundColor: "#1976d2",
-      color: "#fff",
+      background: "linear-gradient(135deg,rgb(176, 180, 183) 0%, #e0e7ef 100%)",
+      color: "#374151",
       textAlign: "center",
+      fontSize: { xs: "0.9rem", sm: "1rem" }
     }}
   >
-    <Typography variant="body2">
-      © {new Date().getFullYear()} Mi Aplicación —{" "}
-      <Link href="#" color="inherit" underline="hover">
-        Contacto
-      </Link>
+    <Typography
+      variant="body2"
+      sx={{
+        fontSize: { xs: "0.9rem", sm: "1rem" }
+      }}
+    >
+      © {new Date().getFullYear()} tejelanasVivi — Todos los derechos reservados 
     </Typography>
   </Box>
 );
